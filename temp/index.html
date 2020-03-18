@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="type">
+        <select>
+          <option value="Area">Area</option
+          ><option value="Data Transfer Rate">Data Transfer Rate</option
+          ><option value="Digital Storage">Digital Storage</option
+          ><option value="Energy">Energy</option
+          ><option value="Frequency">Frequency</option
+          ><option value="Fuel Economy">Fuel Economy</option
+          ><option value="Length">Length</option
+          ><option value="Mass">Mass</option
+          ><option value="Plane Angle">Plane Angle</option
+          ><option value="Pressure">Pressure</option
+          ><option value="Speed">Speed</option
+          ><option selected="1" value="Temperature">Temperature</option
+          ><option value="Time">Time</option
+          ><option value="Volume">Volume</option>
+        </select>
+      </div>
+      <div class="calc">
+        <div class="unit">
+          <input type="text" />
+          <select>
+            <option>Celsius</option>
+            <option>Fahrenheit</option>
+            <option selected="1">Kelvin</option>
+          </select>
+        </div>
+
+        <div class="equal">=</div>
+
+        <div class="unit">
+          <input type="text" />
+          <select>
+            <option selected="1">Celsius</option>
+            <option>Fahrenheit</option>
+            <option>Kelvin</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="formula">
+        <table>
+          <tbody>
+            <tr>
+              <td><div class="btn">Formula</div></td>
+              <td>
+                <div class="desc"><b>K</b> − 273.15 = <b>°C</b></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
