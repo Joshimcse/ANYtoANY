@@ -16,10 +16,8 @@ select:not(:-internal-list-box) {
 }
 
 input {
-  font-family: 'Baloo Chettan 2', cursive;
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
-  color: -internal-light-dark-color(black, white);
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -28,7 +26,6 @@ input {
   display: inline-block;
   text-align: start;
   -webkit-appearance: textfield;
-  background-color: -internal-light-dark-color(white, black);
   -webkit-rtl-ordering: logical;
   cursor: text;
   margin: 0em;
@@ -72,18 +69,19 @@ select {
   appearance: none;
 }
 
-.type {
-  width: 100%;
+header {
+  text-align: center;
 }
 
-.type select {
-  width: 449px;
-  border: 1px solid #dcdcdc;
-  background-position-x: 98%;
-  font-size: 18px;
-  line-height: 23px;
-  padding: 5px 16px 5px 8px;
-  vertical-align: middle;
+header h2 {
+  font-size: 45px;
+}
+
+header span {
+  display: block;
+  color: #f9a825;
+  margin-top: -10px;
+  font-size: 14px;
 }
 
 .container {
@@ -98,34 +96,25 @@ select {
   position: relative;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
+
+.type {
+  width: 100%;
+  margin-bottom: 35px;
 }
 
-.calc {
-  margin-top: 30px;
+.type select {
+  width: 449px;
+  border: 1px solid #dcdcdc;
+  background-position-x: 98%;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 5px 16px 5px 8px;
+  vertical-align: middle;
 }
 
 .unit {
   display: inline-block;
-  width: 320px;
+  width: 425px;
   text-align: center;
   vertical-align: auto;
 }
@@ -146,17 +135,18 @@ select {
 .unit input {
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
-  font-size: 180%;
+  font-size: 160%;
   height: 40px;
   padding: 1px 6px;
   text-align: center;
-  width: 286px;
+  width: 400px;
   border-radius: 2px 2px 0 0;
+  font-family: 'Cairo', sans-serif;
 }
 
 .unit select {
   background-position-x: 95%;
-  width: 300px;
+  width: 414px;
   border-radius: 0 0 2px 2px;
   padding: 5px 16px 5px 5px;
   margin-top: -1px;
@@ -164,13 +154,15 @@ select {
   font-size: 16px;
 }
 
-.formula {
-  text-align: center;
-  margin-top: 18px;
-}
+/* formula */
 
 table {
   display: inline;
+}
+
+.formula {
+  text-align: center;
+  margin-top: 25px;
 }
 
 .formula .btn {
@@ -187,4 +179,26 @@ table {
 .formula .desc {
   font-size: 14px;
   margin-top: 2px;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
